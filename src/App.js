@@ -1,19 +1,23 @@
 import PostForm from "./components/PostForm";
+import Posts from "./components/Posts";
+import FetchedPosts from "./components/FetchedPosts";
 
 function App() {
   return (
     <div className="container pt-3">
       <div className="row">
           <div className="col">
-              <PostForm></PostForm>
+              <PostForm />
           </div>
       </div>
         <div className="row">
             <div className="col">
-                POSTS
+                <h2>Синхронные посты</h2>
+                <Posts posts={[]} />
             </div>
             <div className="col">
-                FETCHED POSTS
+                <h2>Асинхронные посты</h2>
+                <FetchedPosts posts={[]}/>
             </div>
         </div>
     </div>
