@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux'
 import {createPost} from "../redux/actions";
 
+//test commit
 class PostForm extends React.Component{
     constructor(props) {
         super(props)
